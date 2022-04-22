@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+    max-width: 100%;
+    max-height: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Sam Raimi Spider-man Trilogy</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_FMjpg_UX1000_.jpg" alt="Spider-man 1 poster">
+        <h3>Spider-Man</h3>
+        <p>Peter Parker discovers that he has amazing powers, and must learn to protect those closest to him.</p>
+      </div>
+      <div class="column">
+        <img src="https://m.media-amazon.com/images/M/MV5BMzY2ODk4NmUtOTVmNi00ZTdkLTlmOWYtMmE2OWVhNTU2OTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" alt="Spider-man 2 poster">
+        <h3>Spider-Man 2</h3>
+        <p>Spider-man faces off against a new foe named Doctor Octopus, and must choose if he wants to continue to be a hero.</p>
+      </div>
+      <div class="column">
+        <img src="https://d9nvuahg4xykp.cloudfront.net/-4172176544075263230/8554761885919899313.jpg" alt="Spider-man 3 poster">
+        <h3>Spider-Man 3</h3>
+        <p>Spider-man is attacked by an alien being, and must choose between being true to himself or power.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Complete the HTML here -->
+
+</body>
+</html>
